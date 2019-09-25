@@ -6,19 +6,36 @@
     <title>Brandon L.</title>
   </head>
   <body>
+    <div class="menuList">
+      <script>
+        var count = 0;
+        function addClassToggle() {
+          document.querySelector('.menuList').classList.toggle("toggleMenuList");
+          if (count >= 1){
+            document.querySelector('.menuList').classList.toggle("toggleMenuListOff");
+          }
+          count++;
+        }
+      </script>
+      <ul class="menuText" style="list-style-type:none;font-size:40px;">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
+    </div>
   	<div class="menuFour">
     	<script>
-  		const menuFour = document.querySelector('.menuFour');
+      var menuClicked = false;
   		function addClassFunFour() {
-        	this.classList.toggle("clickMenuFour");
-    	}
-    	menuFour.addEventListener('click', addClassFunFour);
-    	</script>
+        	document.querySelector('.menuFour').classList.toggle("clickMenuFour");
+          addClassToggle();
+      }
+      document.querySelector('.menuFour').addEventListener('click', addClassFunFour);
+      </script>
     	<span href="#"></span>
     	<span href="#"></span>
-    	<span href="#"></span>
-	</div>
-	
+	  </div>
     <h1>Brandon Liu</h1>
   </body>
 </html>

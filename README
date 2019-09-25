@@ -1,0 +1,12 @@
+
+Project: Website
+Author: Brandon Liu
+Date: 9/24/19
+
+Description: A fully working website displaying projects,
+contact information, and cool UI/hover techniques.
+
+First REAL commit: 9/24
+Addition of the new font Basier Square as well as a working
+hamburger menu! Hovering over menu items highlights them red.
+Next commit will hopefully include full home page completed.
